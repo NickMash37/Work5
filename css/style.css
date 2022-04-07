@@ -10,8 +10,9 @@
 
 body {
     display: grid;
-    grid-template-columns: 2fr 10fr;
-    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "aside header header header header"
+        "aside main main main main";
     max-width: 1440px;
     margin: auto;
 }
@@ -19,12 +20,13 @@ body {
 /* Header */
 
 header {
-    grid-column: 2 / 4;
+    grid-area: header;
+    grid-column: 2 / 12;
     display: flex;
     justify-content: space-between;
     background-color: #f8faff;
     height: 100px;
-    max-width: 1175px;
+    max-width: 1185px;
     float: right;
 }
 
@@ -39,6 +41,7 @@ nav > li {
     font-size: 12px;
     color: #656565;
     margin-right: 6px;
+    cursor: pointer;
 }
 
 nav > li:first-child::after {
@@ -59,7 +62,7 @@ nav > li:first-child::after {
 .header-info__ellips {
     position: absolute;
     margin-top: 17px;
-    right: 480px;
+    right: 520px;
 }
 
 .header-info__user {
@@ -89,6 +92,7 @@ nav > li:first-child::after {
 /* Sidebar */
 
 aside {
+    grid-area: aside;
     grid-row: 1 / 12;
     float: left;
 }
@@ -96,23 +100,23 @@ aside {
 aside > img {
     margin: 20px 0;
     height: 45px;
-    grid-row: 1 / 1;
-    top: 0;
-    left: 0;
 }
 
 aside > ul {
     display: grid;
     margin-top: 30px;
-    grid-template-columns: 50px 2fr;
-    grid-template-rows: 1fr 4fr;
-    grid-gap: 30px 0px;
-
 }
 
-aside > ul > li {
+aside > ul > div > li {
     grid-column: 2 / 2;
     list-style-type: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+aside > ul > div {
+    display: flex;
+    margin-bottom: 30px;
 }
 
 
@@ -125,6 +129,7 @@ main {
     width: 1185px;
     justify-content: flex-start;
     position: relative;
+    grid-area: main;
 }
 
 .main-button {
@@ -149,6 +154,7 @@ main > div > button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 }
 
 main > div > button > span {
@@ -158,6 +164,15 @@ main > div > button > span {
 }
 
 .main-section {
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 60px;
+}
+
+/* Main table */
+
+table {
+    width: 100%;
+}
+table > td {
+    width: 260px;
 }
