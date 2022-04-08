@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="wrapper container d-flex flex-row-reverse">
-        <header class="d-flex col-11">
+        <header class="d-flex col-10">
             <nav class="navbar w-100">
                 <div class="container">
                     <div class="d-flex p-2 menu-list" >
@@ -24,7 +24,7 @@
                         <img class="header-ellips" src="./assets/img/ellips.png" alt="">
                         <div class="menu-userpic">
                             <img src="./assets/img/userpic.png" alt="Userpic">
-                            <span>Максим Добжанский</span>
+                            <span class="username">Максим Добжанский</span>
                         </div>
                     </div>
                 </div>
@@ -39,67 +39,101 @@
 <!--    Main section & Sidebar menu  -->
 
     <div class="wrapper container d-flex flex-row-reverse">
-        <main class="d-flex col-10 w-75 container">
+        <main class="d-flex col-10">
+            <button type="button" class="create-shop btn btn-success"><p class="create-shop__p">+</p>Создать свой магазин</button>
 
+            <h2>Управление магазинами</h2>
+
+            <table class="main-table table">
+                <tr>
+                    <td class="main-table__headers">№</td>
+                    <td class="main-table__headers">Название</td>
+                    <td class="main-table__headers">Адрес</td>
+                    <td class="main-table__headers">Действие</td>
+                </tr>
+                <tr>
+                    <td>12345</td>
+                    <td>Дипломная работа</td>
+                    <td>http://www.work5.ru/services</td>
+                    <td>
+                        <button type="button" class="main-table__edit btn btn-success"><img src="./assets/img/icons/pencil.png" alt="">Редактировать</button>
+                        <button type="button" class="main-table__cancel btn btn-success"><img src="./assets/img/icons/cancel.png" alt="">Редактировать</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12345</td>
+                    <td>Дипломная работа</td>
+                    <td>http://www.work5.ru/services</td>
+                    <td>
+                        <button type="button" class="main-table__edit btn btn-success"><img src="./assets/img/icons/pencil.png" alt="">Редактировать</button>
+                        <button type="button" class="main-table__cancel btn btn-success"><img src="./assets/img/icons/cancel.png" alt="">Редактировать</button>
+                    </td>
+                </tr>
+
+            </table>
         </main>
 
-        <div class="container w-25 col-2">
+        <div class="container-md w-25 col-1">
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/home.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                            Главная страница
+                    <span>Главная страница</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/cart.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Мои магазины
+                    <span>Мои магазины</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/promo.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Промоматериалы
+                    <span>Промоматериалы</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/statistic.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Статистика
+                    <span>Статистика</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/wallet.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Баланс
+                    <span>Баланс</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/profile.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Персональные данные
+                    <span>Персональные данные</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/info.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    FAQ
+                    <span>FAQ</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/support.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Техподдержка
+                    <span>Техподдержка</span>
                 </a>
             </nav>
             <nav class="navbar navbar-light">
                 <a class="navbar-brand" href="#">
                     <img src="/assets/img/icons/logout.png" width="20" height="20" class="d-inline-block align-items-center me-2" alt="">
-                    Выход
+                    <span>Выход</span>
                 </a>
             </nav>
         </div>
     </div>
+
+<!--    Modal window    -->
+
+
 
 
     <!-- JavaScript Bundle with Popper -->
