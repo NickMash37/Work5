@@ -5,64 +5,40 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Work5</title>
 </head>
 <body>
+    <div class="wrapper container-lg d-flex flex-row-reverse">
+        <header class=" d-flex col-11">
+            <nav class="navbar w-100">
+                <div class="container">
+                    <div class="d-flex p-2 menu-list" >
+                        <li class="menu-item">Главная</li>
+                        <li class="menu-item">Мои магазины</li>
+                    </div>
+                    <div class="float-sm-right d-flex">
+                        <img class="header-envelope" src="./assets/img/envelope.png" alt="Envelope">
+                        <img class="header-ellips" src="./assets/img/ellips.png" alt="">
+                        <div class="menu-userpic">
+                            <img src="./assets/img/userpic.png" alt="Userpic">
+                            <span>Максим Добжанский</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-<!-- Header start -->
-    <header>
-        <nav>
-            <li>Главная</li>
-            <li>Мои магазины</li>
-        </nav>
-        <div class="header-info">
-            <div class="header-info__icons"></div>
-            <img class="header-info__envelope" src="./assets/img/envelope.png" alt="Envelope">
-            <img class="header-info__ellips" src="./assets/img/ellips.png" alt="">
-            <div class="header-info__user">
-                <img src="./assets/img/userpic.png" alt="Userpic">
-                <p>Максим Добжанский</p>
-            </div>
-        </div>
-    </header>
-<!-- Header end -->
+        <aside class="container-md w-25 col-1">
+            <img src="./assets/img/logo.png" alt="">
+        </aside>
 
-<!-- Sidebar start-->
+    </div>
 
-    <aside>
-        <img src="./assets/img/logo.png" alt="Logo">
-        <ul>
-            <div><img src="./assets/img/icons/home.png" alt=""><li>Главная</li></div>
-            <div><img src="./assets/img/icons/cart.png" alt=""><li>Мои магазины</li></div>
-            <div><img src="./assets/img/icons/promo.png" alt=""><li>Промоматериалы</li></div>
-            <div><img src="./assets/img/icons/statistic.png" alt=""><li>Статистика</li></div>
-            <div><img src="./assets/img/icons/wallet.png" alt=""><li>Баланс</li></div>
-            <div><img src="./assets/img/icons/profile.png" alt=""><li>Персональные данные</li></div>
-            <div><img src="./assets/img/icons/info.png" alt=""><li>FAQ</li></div>
-            <div><img src="./assets/img/icons/support.png" alt=""><li>Техподдержка</li></div>
-            <div><img src="./assets/img/icons/logout.png" alt=""><li>Выход</li></div>
-        </ul>
-    </aside>
 
-<!-- Sidebar end-->
-
-<!--Main section start -->
-
-    <main>
-        <div class="main-button">
-            <button class="page-button__green"><span>+</span>Создать свой магазин</button>
-        </div>
-        <div class="main-section">
-            <h2>Управление магазинами</h2>
-            <table class="main-table">
-                <td>№</td>
-                <td>Название</td>
-                <td>Адрес</td>
-                <td>Действие</td>
-            </table>
-        </div>
-    </main>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
